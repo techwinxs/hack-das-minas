@@ -12,17 +12,17 @@ const CustomAvatar: React.FC = () => {
                 </ListCardsItem>
                 <ListCardsItem>
                     <ListCardsButton>
-                        <ShirtOne color="#000" />
+                        <ShirtOne color="#FFCB6D" />
                     </ListCardsButton>
                 </ListCardsItem>
                 <ListCardsItem>
                     <ListCardsButton>
-                        <ShirtOne color="red" />
+                        <ShirtOne color="#FF9966" />
                     </ListCardsButton>
                 </ListCardsItem>
                 <ListCardsItem>
                     <ListCardsButton>
-                        <ShirtOne color="yellow" />
+                        <ShirtOne color="#FF6699" />
                     </ListCardsButton>
                 </ListCardsItem>
             </ListCards>

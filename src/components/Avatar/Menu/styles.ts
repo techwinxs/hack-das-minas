@@ -14,6 +14,8 @@ export const MenuListItems = styled.ul`
 `
 
 export const MenuItem = styled.li`
+    display: flex;
+    justify-content: center;
 `
 
 export const Button = styled.button`
