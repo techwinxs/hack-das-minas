@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import defaultStyle from './styles/theme/defaultStyle'
+import { defaultStyle } from './styles/theme/defaultStyle'
 import GlobalStyles from './styles/GlobalStyles';
 
 const App: React.FC = () => {
