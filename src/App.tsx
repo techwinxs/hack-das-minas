@@ -1,8 +1,15 @@
-function App() {
+import { ThemeProvider } from 'styled-components';
+import defaultStyle from './styles/theme/defaultStyle'
+import GlobalStyles from './styles/GlobalStyles';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      Hack
-    </div>
+    <ThemeProvider theme={defaultStyle}>
+      <GlobalStyles />
+      <div className="App">
+        Hack
+      </div>
+    </ThemeProvider>
   );
 }
 
