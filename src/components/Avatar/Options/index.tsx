@@ -1,0 +1,1 @@
+export { default as ShirtOne } from './Shirts/ShirtOne'
