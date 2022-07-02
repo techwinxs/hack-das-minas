@@ -1,7 +1,6 @@
 import { IOptionsSpecifications } from "../typings";
 
 const OptionHair: React.FC<IOptionsSpecifications> = ({ name }) => {
-  console.log(`optionHair`, name)
 
   switch (name) {
     case "hairOne":
