@@ -16,6 +16,12 @@ export const MenuListItems = styled.ul`
 export const MenuItem = styled.li`
     display: flex;
     justify-content: center;
+
+    &.active{
+        svg path{
+           fill:  ${props => props.theme.colors.primaryPinkDarkest};
+        }
+    }
 `
 
 export const Button = styled.button`

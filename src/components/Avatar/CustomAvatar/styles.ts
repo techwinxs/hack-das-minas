@@ -18,4 +18,11 @@ export const ListCardsItem = styled.li`
 `
 
 export const ListCardsButton = styled.button`
+    overflow: hidden;
+    width: 100%;
+
+    svg{
+        width: 110px;
+        height: 110px;
+    }
 `

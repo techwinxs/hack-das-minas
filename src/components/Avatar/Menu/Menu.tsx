@@ -1,13 +1,18 @@
-import IconSkin from '../../UI/Icons/iconSkin'
-import IconHair from '../../UI/Icons/IconHair'
-import IconClothes from '../../UI/Icons/IconClothes'
-import IconFace from '../../UI/Icons/IconFace'
+import IconSkin from '../../ui/Icons/iconSkin'
+import IconHair from '../../ui/Icons/IconHair'
+import IconClothes from '../../ui/Icons/IconClothes'
+import IconFace from '../../ui/Icons/IconFace'
 
-import { characteristics } from '../../helpers/menuCharacteristics'
+import { characteristics } from '../../../helpers/menuCharacteristics'
 
 import { MenuItems, MenuListItems, MenuItem, Button  } from './styles'
 
-const Menu : React.FC = () => {
+interface IMenu {
+    setTabActive: React.Dispatch<React.SetStateAction<string>>
+    active: string
+}
+
+const Menu: React.FC<IMenu> = ({ setTabActive, active }) => {
     const choiceIcon = (type: string) => {
         switch(type){
             case 'skin':
@@ -31,10 +36,12 @@ const Menu : React.FC = () => {
         <MenuItems>
             <MenuListItems>
                 {
-                    characteristics.map(({name}) => {
+                    characteristics.map(({name}, idx) => {
+                        const isActive = name === active
+   
                         return(
-                            <MenuItem>
-                                <Button>
+                            <MenuItem key={`${name}-${idx}`} className={`${isActive ? 'active' : ''}`}>
+                                <Button onClick={() => setTabActive(name)} >
                                     {choiceIcon(name)}
                                 </Button>
                             </MenuItem>

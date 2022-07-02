@@ -12,14 +12,6 @@ export const characteristics = [
             },
             {
                 name: 'skin',
-                color: "#F3C4B7"
-            },
-            {
-                name: 'skin',
-                color: '#D0A79B'
-            },
-            {
-                name: 'skin',
                 color: '#A8877E'
             },
             {
@@ -32,16 +24,16 @@ export const characteristics = [
         type: 'hair',
         specification: [
             {
-                name: 'typeHair1'
+                name: 'hairOne'
             },
             {
-                name: 'typeHair2'
+                name: 'hairTwo'
             },
             {
-                name: 'typeHair3'
+                name: 'hairThree'
             },
             {
-                name: 'typeHair4'
+                name: 'hairFour'
             }
         ]
     },
@@ -64,14 +56,6 @@ export const characteristics = [
                 name: 'shirt',
                 color: '#FF6699'
             },
-            {
-                name: 'shirt',
-                color: '#A6B4F3'
-            },
-            {
-                name: 'shirt',
-                color: '#fff'
-            }
         ]
     },
     {
@@ -89,15 +73,6 @@ export const characteristics = [
             {
                 name: 'happy',
             },
-            {
-                name: 'afraid',
-            },
-            {
-                name: 'surprised',
-            },
-            {
-                name: 'sexy',
-            }
         ]
     }
 ]
