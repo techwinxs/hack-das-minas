@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 
 import Face from "./Face"
 import Hair from "./Hair"
@@ -8,7 +9,11 @@ import { Container } from "./styles"
 
 const Person : React.FC = () => {
     const { customCharateristic } = useGlobalContext()
-    const [{ custom : {hair, face, shirt, skin}}] = customCharateristic
+    const customPerson = customCharateristic[0]
+
+    if(!customCharateristic.length){
+        return null
+    }
 
     return (
         <Container>
@@ -18,10 +23,10 @@ const Person : React.FC = () => {
                     <rect width="280" height="280" rx="12" stroke="white"/>
                 </mask>
                 <g mask="url(#mask0_0_1711)">
-                    <Shirt color={shirt.color} />
-                    <Skin color={skin.color} />
-                    <Face name={face.name} />
-                    <Hair name={hair.name} />
+                    <Shirt color={customPerson.custom.shirt.color} />
+                    <Skin color={customPerson.custom.skin.color} />
+                    <Face name={customPerson.custom.face.name} />
+                    <Hair name={customPerson.custom.hair.name} />
                 </g>
             </svg>
         </Container>

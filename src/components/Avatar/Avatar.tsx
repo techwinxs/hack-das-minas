@@ -15,6 +15,7 @@ const Avatar : React.FC = () => {
     const { setCustomCharateristic } = useGlobalContext()
 
     useEffect(() => {
+        console.log(`load`)
         if(!JSON.parse(getDataCustomCharacteristics()).length){
             setCustomCharateristic(initialCharacteres)
             localStorage.setItem('customCharacteristics', JSON.stringify(initialCharacteres))   
