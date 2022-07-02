@@ -2,13 +2,15 @@ import { ThemeProvider } from 'styled-components';
 import defaultStyle from './styles/theme/defaultStyle'
 import GlobalStyles from './styles/GlobalStyles';
 
-import Avatar from './components/Avatar';
+import HowDoYouFeel from './pages/how-do-you-feel';
+// import Avatar from './components/sections/Avatar';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={defaultStyle}>
       <GlobalStyles />
-      <Avatar />
+      <HowDoYouFeel />
+      {/* <Avatar /> */}
     </ThemeProvider>
   );
 }

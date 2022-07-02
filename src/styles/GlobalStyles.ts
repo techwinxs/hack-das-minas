@@ -10,6 +10,10 @@ export default createGlobalStyle`
        font-family: 'Be Vietnam Pro', sans-serif;
     }
 
+    body{
+        background: #ECF1F4;
+    }
+
     a{
         text-decoration: none;
     }

@@ -4,9 +4,9 @@ import CustomAvatar from "./CustomAvatar/CustomAvatar"
 import Person from "./Person/Person"
 import Menu from "./Menu/Menu"
 
-import { useGlobalContext } from './../../hooks/globalContext'
-import { initialCharacteres } from "../../helpers/customCharacteristicsInitial"
-import { getDataCustomCharacteristics } from '../../helpers/getDataCustomCharacteristics'
+import { useGlobalContext } from '../../../hooks/globalContext'
+import { initialCharacteres } from "../../../helpers/customCharacteristicsInitial"
+import { getDataCustomCharacteristics } from '../../../helpers/getDataCustomCharacteristics'
 
 import { Container, ContainerAvatar } from "./styles"
 
