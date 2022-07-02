@@ -1,7 +1,14 @@
 export const dataUser = [
     {
        id: '1',
-       name: 'Lari',
+       infos: {
+        name: 'Lari',
+        type: 'Dreamer',
+        weight: 65,
+        height: 1.63,
+        sleep: 8,
+        water: 2,
+       },
        mood: [
         {
             date: '',
