@@ -1,9 +1,9 @@
-import IconSkin from '../../ui/Icons/iconSkin'
-import IconHair from '../../ui/Icons/IconHair'
-import IconClothes from '../../ui/Icons/IconClothes'
-import IconFace from '../../ui/Icons/IconFace'
+import IconSkin from '../../../ui/Icons/iconSkin'
+import IconHair from '../../../ui/Icons/IconHair'
+import IconClothes from '../../../ui/Icons/IconClothes'
+import IconFace from '../../../ui/Icons/IconFace'
 
-import { characteristics } from '../../../helpers/menuCharacteristics'
+import { characteristics } from '../../../../helpers/menuCharacteristics'
 
 import { MenuItems, MenuListItems, MenuItem, Button  } from './styles'
 

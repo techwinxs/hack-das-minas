@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 1rem;
-    background: #ECF1F4;
+    padding: 1rem 0;
 `
 
 export const ContainerAvatar = styled.div`

@@ -1,7 +1,7 @@
 import { Container, ListCards, ListCardsItem, ListCardsButton } from "./styles"
 import OptionsCharacteristic from "../Options"
-import { characteristics } from '../../../helpers/characteristics'
-import { useGlobalContext } from '../../../hooks/globalContext'
+import { characteristics } from '../../../../helpers/characteristics'
+import { useGlobalContext } from '../../../../hooks/globalContext'
 
 interface ICustomAvatar {
     type: string

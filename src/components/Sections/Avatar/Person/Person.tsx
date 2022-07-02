@@ -4,7 +4,7 @@ import Face from "./Face"
 import Hair from "./Hair"
 import Shirt from "./Shirt"
 import Skin from "./Skin"
-import { useGlobalContext } from '../../../hooks/globalContext'
+import { useGlobalContext } from '../../../../hooks/globalContext'
 import { Container } from "./styles"
 
 const Person : React.FC = () => {

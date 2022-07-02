@@ -1,7 +1,12 @@
-import Avatar from "../components/Avatar"
+import Container from "../components/ui/Container/Container"
+import Avatar from "../components/Sections/Avatar"
 
 const EditAvatar = () => {
-    return <Avatar />
+    return (
+        <Container>
+            <Avatar />
+        </Container>
+    )
 }
 
 export default EditAvatar 
