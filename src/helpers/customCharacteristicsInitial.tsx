@@ -6,7 +6,7 @@ export const initialCharacteres = [
                 color: "#000"
             },
             skin: {
-                color: "red"
+                color: "#A8877E"
             },
             face: {
                 name: "angry"

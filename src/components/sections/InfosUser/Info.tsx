@@ -1,4 +1,4 @@
-import { ListInfo, InfoItem, Button} from './styles'
+import { ListInfo, InfoItem, Button, ContainerInfo} from './styles'
 
 const Info : React.FC<any> = ({height, weight, water, sleep}) => {
 
@@ -14,7 +14,7 @@ const Info : React.FC<any> = ({height, weight, water, sleep}) => {
     }
 
     return (
-        <>
+        <ContainerInfo>
             <h4>30 de Julho</h4>
 
             <ListInfo>
@@ -25,7 +25,7 @@ const Info : React.FC<any> = ({height, weight, water, sleep}) => {
             </ListInfo>
 
             <Button>Editar Informações</Button>
-        </>
+        </ContainerInfo>
     )
 }
 
