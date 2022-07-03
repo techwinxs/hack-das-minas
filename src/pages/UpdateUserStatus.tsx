@@ -1,6 +1,6 @@
 import Container from "../components/ui/Container/Container"
-import InfosUser from "../components/sections/InfosUser"
-import FormMood from "../components/sections/FormMood"
+import InfosUser from "../components/Sections/InfosUser"
+import FormMood from "../components/Sections/FormMood"
 
 const UpdateUserStatus = () => {
     return (

@@ -1,8 +1,8 @@
 import Container from "../components/ui/Container/Container"
-import Text from "../components/sections/Text/Text"
-import AnalyseCalendar from "../components/sections/AnalyseCalendar/AnalyseCalendar"
-import AnalyseSimpthoms from '../components/sections/AnalyseSimpthoms/AnalyseSimpthoms'
-import Tips from "../components/sections/Tips/Tips"
+import Text from "../components/Sections/Text/Text"
+import AnalyseCalendar from "../components/Sections/AnalyseCalendar/AnalyseCalendar"
+import AnalyseSimpthoms from '../components/Sections/AnalyseSimpthoms/AnalyseSimpthoms'
+import Tips from "../components/Sections/Tips/Tips"
 
 const ShareCalendar: React.FC = () => {
 
