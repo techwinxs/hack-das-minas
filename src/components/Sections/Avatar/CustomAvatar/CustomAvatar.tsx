@@ -20,7 +20,6 @@ const CustomAvatar: React.FC<ICustomAvatar> = ({ type }) => {
         updateCustomCharateristic(typeCharacteristic, specification)
     }
 
-
     return (
         <Container>
             <ListCards>

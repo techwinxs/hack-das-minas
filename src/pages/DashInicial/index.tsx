@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { BannerIntimus } from "../../components/BannerIntimus"
 import { PrimaryButton } from "../../components/Button"
 import { Card } from "../../components/Cards"
-import PersonSvg from "../../components/Sections/Avatar/Person/PersonSvg"
+import PersonSvg from "../../components/sections/Avatar/Person/PersonSvg"
 import { ReactComponent as Task } from "../../assets/dashboard/tasks.svg"
 import { ReactComponent as Star } from "../../assets/dashboard/Star.svg"
 import { ReactComponent as Lapis } from "../../assets/dashboard/lapis.svg"
@@ -125,7 +125,7 @@ export default function DashInicial(props: any) {
                 </DivFlex>
                 <DivFlex>
                     <img src={require("../../assets/dashboard/calendar_big.PNG")} style={{ width: "50vw", maxWidth: "400px" }} alt="" />
-                    <PrimaryButton width="80%">Editar Ciclo</PrimaryButton>
+                    <PrimaryButton width="80%" ><a href="/update-user-status" style={{color: "#fff"}}>Editar Ciclo</a></PrimaryButton>
                 </DivFlex>
             </Wrapper>
             <BannerIntimus />

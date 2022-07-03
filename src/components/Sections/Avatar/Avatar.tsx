@@ -8,7 +8,7 @@ import { useGlobalContext } from '../../../hooks/globalContext'
 import { initialCharacteres } from "../../../helpers/customCharacteristicsInitial"
 import { getDataCustomCharacteristics } from '../../../helpers/getDataCustomCharacteristics'
 
-import { Container, ContainerAvatar } from "./styles"
+import { Container, ContainerAvatar, Button } from "./styles"
 
 const Avatar : React.FC = () => {
     const [tabActive, setTabActive] = useState('skin')
@@ -30,6 +30,7 @@ const Avatar : React.FC = () => {
                 <Menu setTabActive={setTabActive} active={tabActive}/> 
             </ContainerAvatar>
             <CustomAvatar type={tabActive} />
+            <Button href="/">Salvar</Button>
        </Container>
     )
 }
