@@ -12,6 +12,7 @@ export default createGlobalStyle`
 
     body{
         background: #ECF1F4;
+        color: white;
     }
 
     a{
@@ -26,5 +27,9 @@ export default createGlobalStyle`
         cursor: pointer;
         appearance: none;
         background: none;
+    }
+
+    h5{
+        color: #626162;
     }
 `;
