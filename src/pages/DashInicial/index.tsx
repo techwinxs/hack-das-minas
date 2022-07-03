@@ -107,7 +107,7 @@ export default function DashInicial(props: any) {
                 <DivFlex>
                     <Title mobile={mobile}>Olá, <b>Ana Carolina</b></Title>
                     <DivWrap mobile={mobile}>
-                        <Task style={{ position: "relative", bottom: "58%", left: "18%" }} onClick={toggle} />
+                        <Task style={{ position: "relative", bottom: "58%", left: "18%", cursor: "pointer" }} onClick={toggle} />
                         <PersonSvg width={size} height={size} />
                         <Background mobile={mobile} src={require("../../assets/dashboard/elipse.PNG")} alt="" />
                     </DivWrap>
@@ -121,7 +121,7 @@ export default function DashInicial(props: any) {
             <BannerIntimus />
             <Card conteudo titulo="conteúdo" content="uma variedade de conteúdos sobre autoconhecimento feminino" descricao="meus assuntos de interesse" />
             <Card shopping titulo="shopping" content="em nosso shopping você encontra produtos especiais. além disso, você também pode criar seus kits personalizados" descricao="visite agora!" />
-            <Card chama titulo="chama a Kira" content="dúvidas sobre saúde íntima? chama a Kira! aqui você encontra dúvidas já respondidas por ginecologistas" descricao="conheça mais" />
+            <Card chama titulo="chama a Kira" content="dúvidas sobre saúde íntima? chama a Kira! aqui você encontra dúvidas já respondidas por ginecologistas" descricao="conheça mais" link="/chamakira" />
         </>
     )
 }

@@ -27,6 +27,7 @@ export const StyledModal = styled.div`
   position: relative;
   margin: auto;
   border-radius: 48px 0px;
+  padding: 5vw 10vw;
 `;
 
 export const Header = styled.div`

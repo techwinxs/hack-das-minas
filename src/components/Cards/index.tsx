@@ -28,6 +28,13 @@ const Small = styled.small`
     color: ${props => props.theme.colors.primaryPinkDarkest};
 `
 
+const Link = styled.a`
+    color: ${props => props.theme.colors.primaryPinkMedium};
+    text-decoration: underline;
+    margin-left: 10px ;
+    cursor: pointer;
+`
+
 export function Card(props: any) {
     return (
         <Wrapper>
@@ -42,7 +49,7 @@ export function Card(props: any) {
             </Content>
             <Small>
                 <i></i>
-                <span>{props.descricao}</span>
+                <Link href={props.link}>{props.descricao}</Link>
             </Small>
         </Wrapper>
     )
