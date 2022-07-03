@@ -11,7 +11,7 @@ const Tips : React.FC = () => {
             </Text>
             
             <ContentButton>
-                <Button>Saiba Mais</Button>
+                <Button href="/ideas">Saiba Mais</Button>
             </ContentButton>
         </Container>
     )

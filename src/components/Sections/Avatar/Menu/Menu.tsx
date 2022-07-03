@@ -1,10 +1,10 @@
 
 
 import { characteristics } from '../../../../helpers/menuCharacteristics'
-import IconClothes from '../../../UI/Icons/IconClothes'
-import IconFace from '../../../UI/Icons/IconFace'
-import IconHair from '../../../UI/Icons/IconHair'
-import IconSkin from '../../../UI/Icons/iconSkin'
+import IconClothes from '../../../ui/Icons/IconClothes'
+import IconFace from '../../../ui/Icons/IconFace'
+import IconHair from '../../../ui/Icons/IconHair'
+import IconSkin from '../../../ui/Icons/iconSkin'
 
 import { MenuItems, MenuListItems, MenuItem, Button } from './styles'
 

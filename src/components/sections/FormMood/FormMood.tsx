@@ -29,6 +29,8 @@ const FormMood : React.FC = () => {
         e.preventDefault()
 
         localStorage.setItem('useStatus', JSON.stringify(dataForm))
+        alert(`Registrado com sucesso!`)
+        window.location.href = '/share-calendar'
     }
 
     return (

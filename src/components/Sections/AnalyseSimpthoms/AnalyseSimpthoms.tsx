@@ -18,7 +18,10 @@ const AnalyseSimpthoms : React.FC<IAnalyseSimpthoms>= ({title, image}) => {
             <q> Estou me sentindo cansada e sem muita paciência. Queria apenas ficar quietinha deitada na minha cama, assistindo um filme de terror.”</q>
 
             <ContentButton>
-                <Button>Compartilhar</Button>
+                <Button onClick={() => { 
+                    alert(`Compartilhe em breve`)
+                    window.location.href = "/"
+                }}>Compartilhar</Button>
             </ContentButton>
       
         </Container>
