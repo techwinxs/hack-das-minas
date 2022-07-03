@@ -6,8 +6,10 @@ import { Card } from "../../components/Cards"
 import PersonSvg from "../../components/Sections/Avatar/Person/PersonSvg"
 import { ReactComponent as Task } from "../../assets/dashboard/tasks.svg"
 import { ReactComponent as Star } from "../../assets/dashboard/Star.svg"
+import { ReactComponent as Lapis } from "../../assets/dashboard/lapis.svg"
 import { Modal } from "../../components/Modal"
 import { useModal } from "../../hooks/useModal"
+import { useNavigate } from "react-router-dom"
 
 type PropFlex = {
     mobile?: boolean
@@ -49,20 +51,24 @@ const Background = styled.img<PropFlex>`
     max-width: 300px;
     position: relative;
     z-index: -100;
-    bottom: ${({ mobile }) => (mobile ? "80%" : "88%")};
-    left: 30px;
+    bottom: ${({ mobile }) => (mobile ? "91%" : "88%")};
+    left:  25px;
 `
 const DivWrap = styled.div<PropFlex>`
     height: 52%;
-    width: ${({ mobile }) => (mobile ? "100%" : "60%")};
+    width: ${({ mobile }) => (mobile ? "100%" : "114%")};
 `
-
+const DivRelative = styled.div<PropFlex>`
+    position: relative;
+    left: ${({ mobile }) => (mobile ? "76%" : "88%")};
+    bottom: ${({ mobile }) => (mobile ? "80%" : "10%")};
+`
 const Small = styled.small`
     color: ${props => props.theme.colors.primaryPinkDarkest};
 `
 export default function DashInicial(props: any) {
     const [isNarrowScreen, setIsNarrowScreen] = useState(false);
-
+    const navigate = useNavigate();
     useEffect(() => {
         // set initial value
         const mediaWatcher = window.matchMedia("(max-width: 500px)")
@@ -81,7 +87,9 @@ export default function DashInicial(props: any) {
     }, []
     );
 
-
+    function handleClick() {
+        navigate('/avatar')
+    }
     const { isShown, toggle } = useModal();
 
     const content = <React.Fragment><DivFlex>
@@ -109,6 +117,8 @@ export default function DashInicial(props: any) {
                     <DivWrap mobile={mobile}>
                         <Task style={{ position: "relative", bottom: "58%", left: "18%", cursor: "pointer" }} onClick={toggle} />
                         <PersonSvg width={size} height={size} />
+                        <DivRelative>
+                            <Lapis onClick={handleClick} style={{ cursor: "pointer" }} /></DivRelative>
                         <Background mobile={mobile} src={require("../../assets/dashboard/elipse.PNG")} alt="" />
                     </DivWrap>
                     <DivRow><Subtitle>Você possui</Subtitle><Link href="/pontos">70 pontos</Link></DivRow>

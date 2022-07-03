@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ChamaKira } from '../pages/ChamaKira'
+import { Artigos } from '../pages/ChamaKira/Artigos'
 import DashInicial from '../pages/DashInicial'
 
 //pages 
@@ -14,6 +15,7 @@ const AppRoutes: React.FC = () => {
             <Route path="/avatar" element={<EditAvatar />} />
             <Route path="/pontos" element={<Pontos />} />
             <Route path="/chamakira" element={<ChamaKira />} />
+            <Route path="/artigos" element={<Artigos />} />
         </Routes>
     )
 }

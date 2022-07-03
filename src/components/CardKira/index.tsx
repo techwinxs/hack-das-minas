@@ -27,6 +27,7 @@ const DivRow = styled.div <CardProps>`
     flex-direction: row;
     align-items: center;
     width:${props => props.width};
+    margin: 10px 0;
 `
 const Title = styled.h3`
     color:black;
