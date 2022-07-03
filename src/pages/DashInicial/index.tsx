@@ -15,6 +15,7 @@ type PropFlex = {
 
 const Title = styled.h5<PropFlex>`
     font-size:${({ mobile }) => (mobile ? "1rem" : "2rem")};
+    margin-bottom:${({ mobile }) => (mobile ? "10px" : "32px")};
     `
 const Subtitle = styled.h6`
     color: ${props => props.theme.colors.primaryPinkMedium};
@@ -41,6 +42,7 @@ const Link = styled.a`
     color: ${props => props.theme.colors.primaryPinkMedium};
     text-decoration: underline;
     margin-left: 10px ;
+    cursor: pointer;
 `
 const Background = styled.img<PropFlex>`
     width:40vw;
@@ -109,11 +111,11 @@ export default function DashInicial(props: any) {
                         <PersonSvg width={size} height={size} />
                         <Background mobile={mobile} src={require("../../assets/dashboard/elipse.PNG")} alt="" />
                     </DivWrap>
-                    <DivRow><Subtitle>Você possui</Subtitle><Link href="##">70 pontos</Link></DivRow>
+                    <DivRow><Subtitle>Você possui</Subtitle><Link href="/pontos">70 pontos</Link></DivRow>
                 </DivFlex>
                 <DivFlex>
                     <img src={require("../../assets/dashboard/calendar_big.PNG")} style={{ width: "50vw", maxWidth: "400px" }} alt="" />
-                    <PrimaryButton>Editar Ciclo</PrimaryButton>
+                    <PrimaryButton width="80%">Editar Ciclo</PrimaryButton>
                 </DivFlex>
             </Wrapper>
             <BannerIntimus />
